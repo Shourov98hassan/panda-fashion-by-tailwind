@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.panda.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <nav class="bg-pink-200 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="https://flowbite.com" class="flex items-center">
+            <img src="images/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+            <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Panda</span> -->
+        </a>
+        <div class="flex md:order-2">
+            <div class="hidden relative mr-3 md:mr-0 md:block">
+              <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+              </div>
+              <input type="text" id="email-adress-icon" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+            </div>
+            <button data-collapse-toggle="mobile-menu-3" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-3" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-3">
+          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Products</a>
+              </li>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      <hr>
+     
+
+   <!-- header starts here -->
+
+    <header class="bg-pink-100 pb-32 pt-8">
+        <section class="container mx-auto sm:flex items-center justify-around">
+            <div class="space-y-4">
+                <h1 class="text-2xl sm:text-5xl font-bold uppercase">
+                    <span class="text-amber-400">Be the Penguins</span><br> 
+                    <span>of Winter</span> </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry.</p>
+                        <button class="uppercase bg-[#A4BC46] py-4 px-4 text-white text-2xl rounded-md hover:bg-violet-600 "><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                          </svg> buy now</button>
+            </div>
+
+            <div class="pt-4 sm:pt-0">
+                <img class="w-1/2 sm:w-full" src="images/model.png" alt="">
+            </div>
+          
+        </section>
+    </header>
+
+    <!-- main section starts here -->
+
+    <!-- woman jacket starts here -->
+
+    <section>
+        <h1 class="text-5xl mt-5 mb-5">Woman Jacket</h1>
+        <div class="container bg-pink-100  mx-auto rounded-xl grid grid-cols-3 gap-x-3 drop-shadow-lg">
+            <div class="bg-slate-200 rounded-md my-5 mx-5">
+                <img class="my-5" src="images/jacket-1.png" alt="">
+                <h3 class="text-2xl font-bold">Yellow Coat Jacket </h3>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                    <div class="flex justify-around mt-5 mb-5">
+                        <h1 class="text-2xl font-bold text-amber-400 mt-3">$234</h1>
+                        <button class="uppercase bg-[#A4BC46] py-2 px-2 text-white text-1xl rounded-md hover:bg-violet-600  "><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                          </svg> buy now</button>
+            
+                    </div>
+    
+    
+            </div>
+            
+            
+
+
+            <div class=" bg-slate-200 rounded-md my-5 mx-5 drop-shadow-lg">
+                <img class="my-5" src="images/jacket-2.png" alt="">
+                <h3 class="text-2xl font-bold">Ladies Jacket  </h3>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                    <div class="flex justify-around mt-5 mb-5">
+                        <h1 class="text-2xl font-bold text-amber-400 mt-3">$234</h1>
+                        <button class="uppercase bg-[#A4BC46] py-2 px-2 text-white text-1xl rounded-md hover:bg-violet-600 "><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                          </svg> buy now</button>
+            
+                    </div>
+    
+    
+            </div>
+           
+
+
+            <div class=" bg-slate-200 rounded-md my-5 mx-5 mb-5 drop-shadow-lg">
+                <img class="my-5" src="images/jacket-3.png" alt="">
+                <h3 class="text-2xl font-bold">Woman Leather Jacket  </h3>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                    <div class="flex justify-around mt-5">
+                        <h1 class="text-2xl font-bold text-amber-400 mt-3">$234</h1>
+                        <button class="uppercase bg-[#A4BC46] py-2 px-2 text-white text-1xl rounded-md hover:bg-violet-600 "><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                          </svg> buy now</button>
+            
+                    </div>
+    
+    
+            </div>
+           
+        </div>
+      
+    </section>
+
+    <!-- man jacket starts here -->
+
+    <section>
+        <h1 class="text-5xl mt-5 mb-5">Man Jacket</h1>
+        <div class="container bg-pink-100  mx-auto rounded-xl grid md:grid-cols-2 lg:grid-cols-3 gap-x-3 drop-shadow-lg">
+            <div class="bg-slate-200 rounded-md my-5 mx-5">
+                <img class="my-5" src="images/jacket-4.png" alt="">
+                <h3 class="text-2xl font-bold">Snowboard Jacket Mens </h3>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                    <div class="flex justify-around mt-5 mb-5">
+                        <h1 class="text-2xl font-bold text-amber-400 mt-3">$234</h1>
+                        <button class="uppercase bg-[#A4BC46] py-2 px-2 text-white text-1xl rounded-md hover:bg-violet-600 "><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                          </svg> buy now</button>
+            
+                    </div>
+    
+    
+            </div>
+            
+            
+
+
+            <div class=" bg-slate-200 rounded-md my-5 mx-5 drop-shadow-lg">
+                <img class="my-5" src="images/jacket-5.png" alt="">
+                <h3 class="text-2xl font-bold">Man Leather Jackets  </h3>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                    <div class="flex justify-around mt-5 mb-5">
+                        <h1 class="text-2xl font-bold text-amber-400 mt-3">$234</h1>
+                        <button class="uppercase bg-[#A4BC46] py-2 px-2 text-white text-1xl rounded-md hover:bg-violet-600 "><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                          </svg> buy now</button>
+            
+                    </div>
+    
+    
+            </div>
+           
+
+
+            <div class=" bg-slate-200 rounded-md my-5 mx-5 mb-5 drop-shadow-lg">
+                <img class="my-5" src="images/jacket-6.png" alt="">
+                <h3 class="text-2xl font-bold">Man Casual Jackets  </h3>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry.</p>
+
+                    <div class="flex justify-around mt-5">
+                        <h1 class="text-2xl font-bold text-amber-400 mt-3">$234</h1>
+                        <button class="uppercase bg-[#A4BC46] py-2 px-2 text-white text-1xl rounded-md  hover:bg-violet-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                          </svg> buy now</button>
+            
+                    </div>
+    
+    
+            </div>
+           
+        </div>
+      
+    </section>
+
+    <!-- extra section starts here -->
+
+    <section class="mx-12 mt-12 ">
+
+        <div class="container mx-auto grid grid-cols-2">
+
+            
+                
+                    <div class="pb-20">
+                        <div class="flex bg-slate-50 drop-shadow-lg ">
+                            <div>
+                                <img src="images/house.png" alt="" height="110px" width="100px">
+                            </div>
+                            <div class="ml-3 mt-6">
+                                <h5 class="text-2xl">Find the Perfect Fit</h5>
+                                <p>Everybody is different, which is why we
+                                    offer styles for every body.</p>
+                            </div>
+                        </div>
+
+                       
+                        
+                    
+
+
+                <div class=" flex bg-slate-50 drop-shadow-lg my-2">
+                        
+                    <div>
+                    <img src="images/box.png" alt="" height="110px" width="100px">
+                </div>
+                <div class="ml-3 mt-6">
+                    <h5 class="text-2xl">Free Exchanges</h5>
+                    <p>One of the many reasons you can shop
+                        with peace of mind.</p>
+                </div>
+                    </div>
+
+                    <div class="flex bg-slate-50 drop-shadow-lg">
+                        
+                        <div>
+                        <img src="images/question.png" alt="" height="110px" width="100px">
+                    </div>
+                    <div class="ml-3 mt-6">
+                        <h5 class="text-2xl">Contact Our Seller</h5>
+                        <p>They are here to help you. That's quite 
+                            literally what we pay them for.</p>
+                    </div>
+                        </div>
+
+
+                    </div>
+    
+        
+                            <div class="ml-24">
+                                <img  src="images/shopping.png" alt="">
+                            </div>
+                
+        
+                
+                    
+                
+            
+        </div>
+       
+    </section>
+
+    <!-- footer starts here -->
+    <footer class="bg-pink-200 text-center -mt-10">
+      <div class="text-center py-10">
+        <h1 class="text-4xl text-bold font-bold">LET'S STAY IN TOUCH</h1><br>
+        <p>Get updates on sales specials and more</p>
+        <form class="w-48 mx-auto">
+            <div class="mb-6 mt-4">
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+              <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required>
+            </div>
+            <div class="mb-6">
+              <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
+              <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+            </div>
+            <div class="flex items-start mb-6">
+              <div class="flex items-center h-5">
+                <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="remember" class="font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+              </div>
+            </div>
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+          </form>
+      
+       
+      </div>
+    
+    </footer>
+
+    
+    
+
+
+
+
+</body>
+</html>
